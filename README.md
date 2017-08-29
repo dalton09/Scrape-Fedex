@@ -1,2 +1,1 @@
-# Scrape-Fedex
-Code to scrape tracking details from from the fedex website
+All instructions about the code and how to run the program are placed within the main folder
