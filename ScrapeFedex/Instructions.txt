@@ -1,0 +1,18 @@
+#Author - Dalton De Souza
+
+
+This application requires Python 3.6.2 to be installed on your machine. 
+You can download it here - https://www.python.org/downloads/
+
+After downloading, run the setup and select the "Add Python To Path" option
+when it appears. Install Python in the C drive.
+
+Now save the .py file containing the application code in any folder in the C drive
+
+In command prompt, navigate to the root of the C drive
+
+Once at the root, You can run the bot in the cmd termial by typing
+	-> python.exe Path_To_Folder\ScrapeFedex\scrapefedex.py
+
+Here Path_to_Folder is the path to the folder where the application file is saved starting from C:\
+

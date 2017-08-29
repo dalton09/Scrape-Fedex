@@ -1,0 +1,37 @@
+#Author - Dalton De Souza
+
+Right at the top of the file is eveything that needs to be imported from other
+files for the application to run correctly
+
+I start by taking the tracking no. as input from the user. This is required to
+fetch the information from fedex
+
+Now before the next part of the code, I visited the fedex website and entered the
+tracking numbers. At the same time I opened up a Google Chrome plugin called 
+HTTP Trace to check the HTTP requests being made and the json variables that are
+sent by javascript, AFTER the page has been loaded, to get the details of the 
+package from the server. Using these variables and their values, I made a POST
+request from the python application.
+
+This returned a json object which was saved in variable "data1"
+
+I then converted this object so as to be able to access the keys and their values
+as mentioned in the comments of the code.
+
+The next part is basically retrieving the data and storing them in variable in the 
+format that is expected in the output
+
+==========================================================================================
+NOTE:	At the time of making this application, the package with ID 744668911595 
+	had already been delivered and I was unable to check if the estimated 
+	delivery date and time would be displayed. However there is an IF condition 
+	that checks the status of the shipment. If it has not been delivered, it 
+	will display the estimated delivery date and time.
+==========================================================================================
+
+
+Finally, all the data is stored in variable "outp" in a string that is in the JSON 
+object format. This variable is then converted into a JSON object and the output is
+displayed
+
+
